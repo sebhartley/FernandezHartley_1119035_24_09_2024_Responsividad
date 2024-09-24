@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechWave Solutions</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+        }
+
+        /* Estilos del Menú */
+        nav {
+            background-color: #1a1a1a;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            flex: 1;
+            text-align: center;
+        }
+        nav ul li a {
+            display: block;
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            background-color: #333;
+            border-bottom: 3px solid #3498db;
+        }
+
+        /* Estilos para el Home */
+        .home {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+            background-color: #3498db;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        .home h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .home p {
+            font-size: 1.2rem;
+        }
+        .shape {
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+        }
+        .shape1 {
+            width: 200px;
+            height: 200px;
+            top: -50px;
+            left: -50px;
+        }
+        .shape2 {
+            width: 300px;
+            height: 300px;
+            bottom: -100px;
+            right: -100px;
+        }
+
+        /* Media query para tablet */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                text-align: left;
+            }
+            .home h1 {
+                font-size: 2.5rem;
+            }
+        }
+
+        /* Media query para celular */
+        @media (max-width: 480px) {
+            nav ul {
+                flex-direction: column;
+            }
+            .home h1 {
+                font-size: 2rem;
+            }
+            .home p {
+                font-size: 1rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Portafolio</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección de inicio (Home) -->
+    <section class="home">
+        <h1>Bienvenidos a TechWave Solutions</h1>
+        <p>Soluciones de desarrollo de software para un mundo digital</p>
+
+        <!-- Formas decorativas -->
+        <div class="shape shape1"></div>
+        <div class="shape shape2"></div>
+    </section>
+
+    <!-- Footer usando Bootstrap -->
+    <footer class="bg-dark text-white text-center py-4 mt-auto">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Acerca de nosotros</h5>
+                    <p>Somos una empresa de desarrollo enfocada en soluciones innovadoras.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <p>Email: contacto@techwave.com</p>
+                    <p>Tel: +123 456 789</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Redes Sociales</h5>
+                    <a href="#" class="text-white">LinkedIn</a> |
+                    <a href="#" class="text-white">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
